@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import SideBar from "./Components/SideBar";
+import Main from "./Components/Main";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className='App'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-3'>
+              <div className='app_sidebar'>
+                <SideBar />
+              </div>
+            </div>
+            <div className='col-lg-9'>
+              <div className='main_content'>
+                <Main />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
-}
+};
 
 export default App;
