@@ -30,7 +30,7 @@ const Main = () => {
         </div>
       </a>
       <figure className='sidebar_social-icons my-3'>
-        <a href='/'>
+        <a href='https://www.linkedin.com/in/ritikgupta1982'>
           <img
             src={linkedin}
             alt='linkedin'
@@ -40,12 +40,14 @@ const Main = () => {
       </figure>
       <div className='sidebar_contact my-4'>
         <div className='sidebar_item sidebar_github'>
-          <img
-            src={github}
-            alt='github'
-            style={{ height: "25px", width: "25px" }}
-          />{" "}
-          Github
+          <a href='https://github.com/RitikGupta19/MERN'>
+            <img
+              src={github}
+              alt='github'
+              style={{ height: "25px", width: "25px" }}
+            />{" "}
+            Github
+          </a>
         </div>
         <div className='sidebar-location'>
           <img
