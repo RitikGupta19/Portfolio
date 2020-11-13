@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Pacifico:wght@400;");
+
 body {
   background: #fc5c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
   background: linear-gradient(to right, #6a82fb, #fc5c7d);
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -14,12 +26,13 @@ body {
   height: 85vh;
 }
 
-.app_sidebar {
+.sidebar {
   background-color: white;
   height: 100%;
   border-radius: 20px;
   padding: 25px 15px;
   box-shadow: 0 0 20px;
+  text-align: center;
 }
 
 .main_content {
@@ -28,4 +41,78 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 20px;
   padding: 25px 15px;
+}
+
+.sidebar_image {
+  height: 110px;
+  width: 120px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.sidebar_social-icons {
+  height: 25px;
+  width: 25px;
+}
+
+.sidebar_name {
+  font-family: Pacifico;
+  margin: 20px 0;
+}
+
+span.firstName {
+  color: #fc5c7d;
+  font-size: x-large;
+}
+
+span.lastName {
+  font-size: x-large;
+  color: #6a82fb;
+}
+
+.sidebar_item {
+  margin-bottom: 6px;
+  padding-top: 6px;
+  height: 40px;
+  font-size: 1.05rem;
+  border-radius: 30px;
+}
+
+.sidebar_title {
+  background-color: rgb(233, 226, 226);
+  border-radius: 30px;
+}
+
+.sidebar_social-icons {
+  margin: auto;
+  justify-content: center;
+}
+
+.sidebar_contact {
+  background-color: rgb(172, 167, 167);
+  padding: 5px 0;
+  margin: 20px -15px;
+}
+
+.sidebar_email {
+  background: #fc5c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 15px 25px 0px;
+  color: white;
+  font-size: x-large;
+  transition: all 1s linear;
+}
+
+.sidebar_email:hover {
+  transform: scale(1.2);
+}
+
+.sidebar_github:hover,
+.sidebar_resume:hover {
+  background-color: rgb(233, 226, 226);
+  color: black;
+  cursor: pointer;
 }

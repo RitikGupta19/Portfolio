@@ -9,9 +9,7 @@ const App = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-3'>
-              <div className='app_sidebar'>
-                <SideBar />
-              </div>
+              <SideBar />
             </div>
             <div className='col-lg-9'>
               <div className='main_content'>

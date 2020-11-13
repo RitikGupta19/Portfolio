@@ -1,7 +1,68 @@
-import React from "react";
+import React, { Fragment } from "react";
+import linkedin from "../assets/icons/linkedin.svg";
+import pin from "../assets/icons/pin.svg";
+import tie from "../assets/icons/tie.svg";
+import mightycoder from "../assets/mightycoder.svg";
+import github from "../assets/icons/github-logo.svg";
+import resumeFile from "../assets/resume.pdf";
 
 const Main = () => {
-  return <div>Sub content compnent</div>;
+  const handleEmail = () => {
+    window.open("mailto: ritikgupta1982@gmail.com");
+  };
+
+  return (
+    <div className='sidebar'>
+      <img src={mightycoder} alt='ProfileImage' className='sidebar_image'></img>
+      <div className='sidebar_name'>
+        <span className='firstName'>Ritik</span>{" "}
+        <span className='lastName'>Gupta</span>
+      </div>
+      <div className='sidebar_item sidebar_title'>Web Developer</div>
+      <a href={resumeFile} download='resume.pdf'>
+        <div className='sidebar_item sidebar_icons sidebar_resume my-2'>
+          <img
+            src={tie}
+            alt='download icon'
+            style={{ height: "25px", width: "25px" }}
+          />
+          Download Resume
+        </div>
+      </a>
+      <figure className='sidebar_social-icons my-3'>
+        <a href='/'>
+          <img
+            src={linkedin}
+            alt='linkedin'
+            style={{ height: "30px", width: "30px" }}
+          />
+        </a>
+      </figure>
+      <div className='sidebar_contact my-4'>
+        <div className='sidebar_item sidebar_github'>
+          <img
+            src={github}
+            alt='github'
+            style={{ height: "25px", width: "25px" }}
+          />{" "}
+          Github
+        </div>
+        <div className='sidebar-location'>
+          <img
+            src={pin}
+            alt='location'
+            style={{ height: "25px", width: "25px" }}
+          />
+          Delhi, India
+        </div>
+        <div className='sidebar_item'>ritikgupta1982@gmail.com</div>
+        <div className='sidebar_item'>8010708079</div>
+      </div>
+      <div className='sidebar-item sidebar_email my-5' onClick={handleEmail}>
+        Email Me
+      </div>
+    </div>
+  );
 };
 
 export default Main;
