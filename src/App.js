@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import SideBar from "./Components/SideBar";
 import Main from "./Components/Main";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
             </div>
             <div className='col-lg-9'>
               <div className='main_content'>
+                {/*Navbar starts Here*/}
+                <Navbar />
                 <Main />
               </div>
             </div>
