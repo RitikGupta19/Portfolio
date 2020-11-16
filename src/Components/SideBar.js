@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import linkedin from "../assets/icons/linkedin.svg";
-import pin from "../assets/icons/pin.svg";
-import tie from "../assets/icons/tie.svg";
+import placeholder from "../assets/myicons/placeholder.svg";
+import graduated from "../assets/myicons/graduated.svg";
 import mightycoder from "../assets/mightycoder.svg";
-import github from "../assets/icons/github-logo.svg";
+import github from "../assets/myicons/github.svg";
 import resumeFile from "../assets/resume.pdf";
 
 const Main = () => {
@@ -22,7 +22,7 @@ const Main = () => {
       <a href={resumeFile} download='resume.pdf'>
         <div className='sidebar_item sidebar_icons sidebar_resume my-2'>
           <img
-            src={tie}
+            src={graduated}
             alt='download icon'
             style={{ height: "25px", width: "25px" }}
           />
@@ -51,7 +51,7 @@ const Main = () => {
         </div>
         <div className='sidebar-location'>
           <img
-            src={pin}
+            src={placeholder}
             alt='location'
             style={{ height: "25px", width: "25px" }}
           />

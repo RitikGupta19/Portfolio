@@ -79,7 +79,7 @@ span.lastName {
 }
 
 .sidebar_title {
-  background-color: rgb(233, 226, 226);
+  background-color: rgb(194, 190, 190);
   border-radius: 30px;
 }
 
@@ -89,7 +89,7 @@ span.lastName {
 }
 
 .sidebar_contact {
-  background-color: rgb(172, 167, 167);
+  background-color: rgb(194, 190, 190);
   padding: 5px 0;
   margin: 20px -15px;
 }
@@ -150,4 +150,10 @@ span.lastName {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* About section */
+
+.about {
+  padding: 20px;
 }
