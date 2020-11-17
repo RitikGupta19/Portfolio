@@ -19,28 +19,29 @@ a:hover {
 }
 
 .container {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .row {
-  height: 85vh;
+  height: 90vh;
 }
+
+.main_content {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  padding: 25px 15px;
+}
+
+/* Sidebar */
 
 .sidebar {
   background-color: white;
   height: 100%;
   border-radius: 20px;
   padding: 25px 15px;
-  box-shadow: 0 0 20px;
+  box-shadow: 0 0 10px black;
   text-align: center;
-}
-
-.main_content {
-  background-color: white;
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 0 0 20px;
-  padding: 25px 15px;
 }
 
 .sidebar_image {
@@ -58,15 +59,10 @@ a:hover {
 .sidebar_name {
   font-family: Pacifico;
   margin: 20px 0;
+  font-size: 1.7rem;
 }
 
 span.firstName {
-  color: #fc5c7d;
-  font-size: x-large;
-}
-
-span.lastName {
-  font-size: x-large;
   color: #6a82fb;
 }
 
@@ -156,4 +152,35 @@ span.lastName {
 
 .about {
   padding: 20px;
+}
+
+.about_intro {
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+.about_container {
+  background-color: #dbdddf;
+  padding: 20px;
+}
+
+.about_heading {
+  font-size: 25px;
+  font-weight: 700px;
+  color: #354358;
+}
+
+/* Skill card */
+.skill_card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.skill_card_icon {
+  height: 50px;
+  width: 50px;
 }
