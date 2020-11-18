@@ -1,5 +1,5 @@
 import React from "react";
-import frontend from "../assets/myicons/graphic-designer.svg";
+import frontend from "../assets/myicons/web-design.svg";
 import backend from "../assets/myicons/backend.svg";
 import api from "../assets/myicons/api.svg";
 import SkillCard from "./SkillCard";
@@ -29,8 +29,9 @@ const About = () => {
   return (
     <div className='about'>
       <h6 className='about_intro'>
-        Reprehenderit consectetur qui Lorem ullamco amet eu veniam id nulla
-        Lorem nisi quis.
+        Reprehenderit consectetur qui Lorem ullamco amet eu veniam id nulla.
+        Lorem nisi quis. Ad veniam sunt amet adipisicing cupidatat cupidatat
+        laboris esse laboris et culpa amet sunt excepteur.
       </h6>
       <div className='container about_container'>
         <h6 className='about_heading'>What I Offer</h6>

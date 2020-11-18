@@ -3,9 +3,19 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico:wght@400;");
 
 body {
-  background: #fc5c7d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
-  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f2b96,
+    #a8c0ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f2b96,
+    #a8c0ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #354358;
 }
 
 a {
@@ -18,12 +28,12 @@ a:hover {
   color: black;
 }
 
-.container {
+.app_container {
   padding-top: 50px;
 }
 
-.row {
-  height: 90vh;
+.app_row {
+  height: 80vh;
 }
 
 .main_content {
@@ -91,12 +101,19 @@ span.firstName {
 }
 
 .sidebar_email {
-  background: #fc5c7d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
-  background: linear-gradient(to right, #6a82fb, #fc5c7d);
-  border-radius: 30px;
-  cursor: pointer;
-  margin: 15px 25px 0px;
+  background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f2b96,
+    #a8c0ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f2b96,
+    #6a82fb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0 10px;
+  border-radius: 50px;
   color: white;
   font-size: x-large;
   transition: all 1s linear;
@@ -141,8 +158,8 @@ span.firstName {
 }
 
 .navbar_item:hover {
-  background: linear-gradient(to right, #6a82fb, #fc5c7d);
-  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
+  background: linear-gradient(to right, #6a82fb, #3f2b96);
+  background: -webkit-linear-gradient(to right, #6a82fb, #3f2b96);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -152,22 +169,27 @@ span.firstName {
 
 .about {
   padding: 20px;
+  margin: -35px;
 }
 
 .about_intro {
   font-size: 1.1rem;
   padding: 20px;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
 .about_container {
   background-color: #dbdddf;
-  padding: 20px;
+  padding: 30px 20px;
+  margin: 20px 0;
 }
 
 .about_heading {
   font-size: 25px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #354358;
+  margin-left: 10px;
 }
 
 /* Skill card */
@@ -183,4 +205,20 @@ span.firstName {
 .skill_card_icon {
   height: 50px;
   width: 50px;
+  margin-left: 15px;
+}
+
+.skill_card_body {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.skill_card_about {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6e7e91;
+}
+
+.skill_card_title {
+  font-weight: 600;
 }
