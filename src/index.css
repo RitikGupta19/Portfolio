@@ -222,3 +222,59 @@ span.firstName {
 .skill_card_title {
   font-weight: 600;
 }
+
+/* Resume component */
+
+.resume {
+  padding: 20px;
+}
+
+.resume_card_heading,
+.resume_skills_heading {
+  margin-left: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #354358;
+}
+
+.resume_card_body {
+  margin-top: 10px;
+}
+
+.resume_card_title {
+  font-weight: 700;
+}
+
+.resume_card_details {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.resume_card_name {
+  font-size: 16px;
+}
+
+/* Bar component */
+.bar {
+  width: 90%;
+  background-color: #f1f2f3;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.bar_icon {
+  width: 15px;
+  height: 15px;
+}
+
+.bar_wrapper {
+  background-image: linear-gradient(90deg, #3f2b96, #a8c0ff);
+  border-radius: 20px;
+  padding: 4px 14px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.bar_name {
+  font-size: 1.1rem;
+}
