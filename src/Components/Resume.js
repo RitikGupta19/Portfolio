@@ -1,11 +1,12 @@
 import React from "react";
 import react from "../assets/icons/react.svg";
 import SkillBar from "./SkillBar";
+import python from "../assets/icons/python.svg";
 
 const Resume = () => {
   const skills = [
     {
-      icon: react,
+      icon: python,
       name: "React",
     },
     {
