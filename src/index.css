@@ -15,6 +15,7 @@ body {
     #a8c0ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #354358;
+  font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -181,7 +182,7 @@ span.firstName {
 
 .about_intro {
   font-size: 1.1rem;
-  padding: 20px;
+  padding: 20px 28px;
   margin: 10px 0;
   font-weight: bold;
 }
@@ -239,7 +240,7 @@ span.firstName {
 .resume_card_heading,
 .resume_skills_heading {
   margin-left: 10px;
-  font-size: 1.8rem;
+  font-size: 1.6 rem;
   font-weight: 700;
   color: #354358;
 }
@@ -336,4 +337,24 @@ span.firstName {
   font-size: 1rem;
   margin: 0 5px;
   cursor: pointer;
+}
+
+.project_navbar_active {
+  color: #3f2b96;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .navbar_active {
+    font-size: 1.5rem;
+  }
+
+  .navbar_item {
+    font-size: 1rem;
+  }
 }

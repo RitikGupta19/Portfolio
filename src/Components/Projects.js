@@ -5,12 +5,13 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectData);
-
+  const [activeItem, setActiveItem] = useState("All");
   const handleFilterCategory = (name) => {
     const filterProj = projectData.filter((project) =>
       project.category.includes(name)
     );
     setProjects(filterProj);
+    setActiveItem(name);
   };
 
   const project_variants = {
@@ -40,10 +41,29 @@ const Projects = () => {
       exit='exit'
       className='container project'>
       <div className='project_navbar'>
-        <div onClick={() => setProjects(projectData)}>All</div>
-        <div onClick={() => handleFilterCategory("react.js")}>ReactJS</div>
-        <div onClick={() => handleFilterCategory("node.js")}>Node</div>
-        <div onClick={() => handleFilterCategory("mongoDB")}>MongoDB</div>
+        <div
+          className={activeItem === "All" && "project_navbar_active"}
+          onClick={() => {
+            setProjects(projectData);
+            setActiveItem("All");
+          }}>
+          All
+        </div>
+        <div
+          className={activeItem === "react.js" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("react.js")}>
+          ReactJS
+        </div>
+        <div
+          className={activeItem === "node.js" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("node.js")}>
+          Node
+        </div>
+        <div
+          className={activeItem === "mongoDB" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("mongoDB")}>
+          MongoDB
+        </div>
       </div>
       <div className='row'>
         {projects.map((proj, index) => (
