@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navItem, setNavItem] = useState("");
@@ -17,8 +18,26 @@ const Navbar = () => {
     setNavItem(nav);
   };
 
+  const navbar_variants = {
+    hidden: {
+      y: "-30vh",
+    },
+    visible: {
+      y: 0,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring",
+      },
+    },
+  };
+
   return (
-    <div className='navbar'>
+    <motion.div
+      className='navbar'
+      variants={navbar_variants}
+      initial='hidden'
+      animate='visible'>
       <div className='navbar_active'>{componenet}</div>
       <div className='navbar_items'>
         {navItem !== "/" && (
@@ -43,7 +62,7 @@ const Navbar = () => {
           </Link>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -3,6 +3,7 @@ import frontend from "../assets/myicons/web-design.svg";
 import backend from "../assets/myicons/backend.svg";
 import api from "../assets/myicons/api.svg";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
@@ -26,8 +27,33 @@ const About = () => {
     },
   ];
 
+  const about_variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      },
+    },
+    // firerd when component is unMounted
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className='about'>
+    <motion.div
+      className='about'
+      variants={about_variants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'>
       <h6 className='about_intro'>
         Reprehenderit consectetur qui Lorem ullamco amet eu veniam id nulla.
         Lorem nisi quis. Ad veniam sunt amet adipisicing cupidatat cupidatat
@@ -41,7 +67,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default About;

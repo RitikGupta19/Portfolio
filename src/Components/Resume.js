@@ -2,6 +2,7 @@ import React from "react";
 import react from "../assets/icons/react.svg";
 import SkillBar from "./SkillBar";
 import python from "../assets/icons/python.svg";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   const skills = [
@@ -23,8 +24,32 @@ const Resume = () => {
     },
   ];
 
+  const resume_variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className='container resume'>
+    <motion.div
+      className='container resume'
+      variants={resume_variants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'>
       <div className='row'>
         <div className='col-lg-6 resume_card'>
           <h4 className='resume_card_heading'>Education</h4>
@@ -66,7 +91,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

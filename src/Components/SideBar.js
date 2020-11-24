@@ -5,14 +5,33 @@ import graduated from "../assets/myicons/graduated.svg";
 import mightycoder from "../assets/mightycoder.svg";
 import github from "../assets/myicons/github.svg";
 import resumeFile from "../assets/resume.pdf";
+import { motion } from "framer-motion";
 
 const Main = () => {
   const handleEmail = () => {
     window.open("mailto: ritikgupta1982@gmail.com");
   };
 
+  const sidebar_variants = {
+    hidden: {
+      x: "-20vw",
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring",
+      },
+    },
+  };
+
   return (
-    <div className='sidebar'>
+    <motion.div
+      className='sidebar'
+      variants={sidebar_variants}
+      initial='hidden'
+      animate='visible'>
       <img src={mightycoder} alt='ProfileImage' className='sidebar_image'></img>
       <div className='sidebar_name'>
         <span className='firstName'>Ritik</span>{" "}
@@ -63,7 +82,7 @@ const Main = () => {
       <div className='sidebar-item sidebar_email my-5' onClick={handleEmail}>
         Email Me
       </div>
-    </div>
+    </motion.div>
   );
 };
 

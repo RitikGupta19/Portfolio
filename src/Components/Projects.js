@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import projectData from "./ProjectData";
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectData);
@@ -12,8 +13,32 @@ const Projects = () => {
     setProjects(filterProj);
   };
 
+  const project_variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className='container project'>
+    <motion.div
+      variants={project_variants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className='container project'>
       <div className='project_navbar'>
         <div onClick={() => setProjects(projectData)}>All</div>
         <div onClick={() => handleFilterCategory("react.js")}>ReactJS</div>
@@ -25,7 +50,7 @@ const Projects = () => {
           <ProjectCard key={index} details={proj} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
