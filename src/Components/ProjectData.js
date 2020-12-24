@@ -1,58 +1,98 @@
-import Dev_talks from "../assets/projects_images/Dev_talks.jpg";
-import COVID from "../assets/projects_images/COVID.jpg";
-
+import Ecommerce from "../assets/projects_images/Ecommerce.PNG";
+import DeveloperIn from "../assets/projects_images/DeveloperIn.PNG";
+import GitSearch from "../assets/projects_images/GitSearch.PNG";
+import TicTacToe from "../assets/projects_images/TicTacToe.PNG";
+import YourTube from "../assets/projects_images/YourTube.PNG";
+import Pics from "../assets/projects_images/Pics.PNG";
+import MyTask from "../assets/projects_images/MyTask.PNG";
+import ToggleTheme from "../assets/projects_images/ToggleTheme.PNG";
+import Backend from "../assets/projects_images/Backend.PNG";
+import Grid from "../assets/projects_images/Grid.gif";
+// TODO
+import WhatsAppClone from "../assets/projects_images/DeveloperIn.PNG";
+// DeveloperIN, WhatsAPP, TicTacToe live
 const projectData = [
   {
-    name: "Shop Website",
-    image: Dev_talks,
-    deployed_url: "!#",
-    category: ["html_css", "vanilla"],
+    name: "WhatsApp Clone",
+    image: WhatsAppClone,
+    deployed_url: "#",
+    github_url:
+      "https://github.com/RitikGupta19/MERN/tree/master/WhatsAppClone",
+    category: ["ReactJS", "Firebase", "NodeJS", "ExpressJS", "MongoDB"],
   },
   {
-    name: "Dev Talks",
-    image: Dev_talks,
-    deployed_url: "Dhttps://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node.js", "mongoDB", "react.js"],
+    name: "GitSearch",
+    image: GitSearch,
+    deployed_url: "https://gitsearch-b00e8.web.app/",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/gitsearch",
+    category: ["ReactJS"],
   },
   {
-    name: "Shop Website",
-    image: Dev_talks,
-    deployed_url: "!#",
-    category: ["html_css", "vanilla"],
+    name: "DeveloperIn",
+    image: DeveloperIn,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/DeveloperIn",
+    category: ["ReactJS", "Redux", "NodeJS", "ExpressJS", "MongoDB"],
   },
   {
-    name: "Dev Talks",
-    image: Dev_talks,
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node.js", "mongoDB", "react.js"],
+    name: "Ecommerce Site",
+    image: Ecommerce,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/E-commerce",
+    category: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
   },
   {
-    name: "Shop Website",
-    image: Dev_talks,
-    deployed_url: "!#",
-    category: ["html_css", "vanilla"],
+    name: "YourTube",
+    image: YourTube,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/YourTube",
+    category: ["ReactJS"],
   },
   {
-    name: "Dev Talks",
-    image: Dev_talks,
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node.js", "mongoDB", "react.js"],
+    name: "REST API",
+    image: Backend,
+    deployed_url: "#",
+    github_url:
+      "https://github.com/RitikGupta19/MERN/tree/master/BackEnd/RESTAPI",
+    category: ["NodeJS", "ExpressJS", "MongoDB"],
   },
   {
-    name: "Shop Website",
-    image: Dev_talks,
-    deployed_url: "!#",
-    category: ["html_css", "vanilla"],
+    name: "ADV Tic Tac Toe",
+    image: TicTacToe,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/tictactoe",
+    category: ["ReactJS"],
   },
   {
-    name: "Dev Talks",
-    image: Dev_talks,
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node.js", "mongoDB", "react.js"],
+    name: "Pics",
+    image: Pics,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/Pics",
+    category: ["ReactJS"],
+  },
+  {
+    name: "My Task",
+    image: MyTask,
+    deployed_url: "#",
+    github_url: "https://github.com/RitikGupta19/MERN/tree/master/MyTasks",
+    category: ["ReactJS"],
+  },
+  {
+    name: "Toggele Theme",
+    image: ToggleTheme,
+    deployed_url: "#",
+    github_url:
+      "https://github.com/RitikGupta19/MERN/tree/master/CSS%20Projects/Theme%20Switcher",
+    category: ["CSS"],
+  },
+
+  {
+    name: "Grid",
+    image: Grid,
+    deployed_url: "#",
+    github_url:
+      "https://github.com/RitikGupta19/MERN/tree/master/CSS%20Projects/CSS%20Grid/public",
+    category: ["CSS"],
   },
 ];
 

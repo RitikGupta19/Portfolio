@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import linkedin from "../assets/icons/linkedin.svg";
+import React from "react";
+import linkedin from "../assets/myicons/linkedin.svg";
 import placeholder from "../assets/myicons/placeholder.svg";
 import graduated from "../assets/myicons/graduated.svg";
-import mightycoder from "../assets/mightycoder.svg";
+import Ritik from "../assets/myicons/Ritik.jpg";
 import github from "../assets/myicons/github.svg";
-import resumeFile from "../assets/resume.pdf";
+import resumeFile from "../assets/Ritik_Gupta_Resume.pdf";
 import { motion } from "framer-motion";
 
 const Main = () => {
@@ -32,7 +32,7 @@ const Main = () => {
       variants={sidebar_variants}
       initial='hidden'
       animate='visible'>
-      <img src={mightycoder} alt='ProfileImage' className='sidebar_image'></img>
+      <img src={Ritik} alt='ProfileImage' className='sidebar_image'></img>
       <div className='sidebar_name'>
         <span className='firstName'>Ritik</span>{" "}
         <span className='lastName'>Gupta</span>
@@ -77,7 +77,7 @@ const Main = () => {
           Delhi, India
         </div>
         <div className='sidebar_item'>ritikgupta1982@gmail.com</div>
-        <div className='sidebar_item'>8010708079</div>
+        <div className='sidebar_item'>+918010708079</div>
       </div>
       <div className='sidebar-item sidebar_email my-5' onClick={handleEmail}>
         Email Me

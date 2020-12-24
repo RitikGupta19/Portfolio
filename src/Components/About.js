@@ -9,21 +9,20 @@ const About = () => {
   const skills = [
     {
       icon: frontend,
-      title: "Veniam anim consectetur minim mollit aute enim.",
+      title: "Frontend Development",
       about:
-        "Lorem eiusmod exercitation enim commodo aute incididunt ipsum id commodo. Ea occaecat exercitation veniam eu nostrud deserunt aute pariatur nostrud nisi nulla aute deserut.",
+        "Develop scalable frontend application using HTML, CSS, JS, ReactJS",
     },
     {
       icon: backend,
-      title: "Veniam anim consectetur minim mollit aute enim.",
+      title: "Backend Development",
       about:
-        "Lorem eiusmod exercitation enim commodo aute incididunt ipsum id commodo. Ea occaecat exercitation veniam eu nostrud deserunt aute pariatur nostrud nisi nulla aute deserut.",
+        "Building backend server using NodeJS, ExpresJS and have knowledge of database (MongoDb)",
     },
     {
       icon: api,
-      title: "Veniam anim consectetur minim mollit aute enim.",
-      about:
-        "Lorem eiusmod exercitation enim commodo aute incididunt ipsum id commodo. Ea occaecat exercitation veniam eu nostrud deserunt aute pariatur nostrud nisi nulla aute deserut.",
+      title: "API Development",
+      about: "Built robust REST API's with express framework.",
     },
   ];
 
@@ -55,12 +54,14 @@ const About = () => {
       animate='visible'
       exit='exit'>
       <h6 className='about_intro'>
-        Reprehenderit consectetur qui Lorem ullamco amet eu veniam id nulla.
-        Lorem nisi quis. Ad veniam sunt amet adipisicing cupidatat cupidatat
-        laboris esse laboris et culpa amet sunt excepteur.
+        A passionate guy who codes. An enthusiastic person with capability of
+        quick learning and discipline you could count on. I have knowledge of
+        some of the most popular technologies in industry and also exploring
+        more and more. Devoted to field of development whole heartedly, even
+        some times don't able to recogonise when the time passed while I am on
+        my work ;).
       </h6>
       <div className='container about_container'>
-        <h6 className='about_heading'>What I Offer</h6>
         <div className='row'>
           {skills.map((skill) => (
             <SkillCard skill={skill} />

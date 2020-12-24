@@ -1,26 +1,49 @@
 import React from "react";
-import react from "../assets/icons/react.svg";
+import react from "../assets/myicons/react.svg";
 import SkillBar from "./SkillBar";
-import python from "../assets/icons/python.svg";
 import { motion } from "framer-motion";
 
 const Resume = () => {
   const skills = [
     {
-      icon: python,
-      name: "React",
+      icon: react,
+      name: "ReactJS",
     },
     {
       icon: react,
-      name: "React",
+      name: "NodeJS & ExpressJS",
     },
     {
       icon: react,
-      name: "React",
+      name: "MongoDB",
     },
     {
       icon: react,
-      name: "React",
+      name: "HTML & CSS",
+    },
+    {
+      icon: react,
+      name: "C & C++",
+    },
+    {
+      icon: react,
+      name: "Python",
+    },
+  ];
+
+  const tools = [
+    {
+      icon: react,
+      name: "Git",
+    },
+
+    {
+      icon: react,
+      name: "Firebase",
+    },
+    {
+      icon: react,
+      name: "Google API",
     },
   ];
 
@@ -59,8 +82,9 @@ const Resume = () => {
             </h5>
             <p className='resume_card_name'>Inderprastha Engineering College</p>
             <p className='resume_card_details'>
-              Veniam ex deserunt excepteur duis voluptate qui ipsum pariatur
-              nisi laboris amet sit cupidatat occaecat.
+              Currently a pre-final year student of B.Tech (Computer Science and
+              Engineering) from DR. APJ Abdul Kalam Technical University
+              (formerly known as UPTU).
             </p>
           </div>
         </div>
@@ -68,25 +92,31 @@ const Resume = () => {
           <h4 className='resume_card_heading'>Experience</h4>
           <div className='resume_card_body'>
             <h5 className='resume_card_title'>
-              Ut culpa enim duis magna pariatur ea.
+              MyKaam: Solving Jobs for Blue Collor
             </h5>
-            <p className='resume_card_name'>
-              Voluptate proident consequat excepteur pariatur culpa nulla est
-              exercitation.
-            </p>
+            <p className='resume_card_name'>Web Developer</p>
             <p className='resume_card_details'>
-              Veniam ex deserunt excepteur duis voluptate qui ipsum pariatur
-              nisi laboris amet sit cupidatat occaecat.
+              Some of my roles were to do optimization of website to increase
+              performance and efficiency. Used automation tools like Gulp,
+              Webpack. Server Side rendering of React for better SEO.
             </p>
           </div>
         </div>
       </div>
-      <h5 className='resume_skills_heading'>Language and Framework</h5>
       <div className='row'>
-        <div className='col resume_skills'>
+        <div className='col-12 col-lg-6 resume_skills'>
+          <h5 className='resume_skills_heading'>Language and Framework</h5>
           <div className='resume_skills_body mt-3'>
             {skills.map((skill, index) => (
-              <SkillBar skill={skill} />
+              <SkillBar key={index} skill={skill} />
+            ))}
+          </div>
+        </div>
+        <div className='col-12 col-lg-6 resume_skills'>
+          <h5 className='resume_skills_heading'>Tools and Software</h5>
+          <div className='resume_skills_body mt-3'>
+            {tools.map((tool, index) => (
+              <SkillBar key={index} skill={tool} />
             ))}
           </div>
         </div>

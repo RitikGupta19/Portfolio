@@ -50,19 +50,29 @@ const Projects = () => {
           All
         </div>
         <div
-          className={activeItem === "react.js" && "project_navbar_active"}
-          onClick={() => handleFilterCategory("react.js")}>
+          className={activeItem === "ReactJS" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("ReactJS")}>
           ReactJS
         </div>
         <div
-          className={activeItem === "node.js" && "project_navbar_active"}
-          onClick={() => handleFilterCategory("node.js")}>
-          Node
+          className={activeItem === "Redux" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("Redux")}>
+          Redux
         </div>
         <div
-          className={activeItem === "mongoDB" && "project_navbar_active"}
-          onClick={() => handleFilterCategory("mongoDB")}>
+          className={activeItem === "NodeJS" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("NodeJS")}>
+          NodeJS
+        </div>
+        <div
+          className={activeItem === "MongoDB" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("MongoDB")}>
           MongoDB
+        </div>
+        <div
+          className={activeItem === "CSS" && "project_navbar_active"}
+          onClick={() => handleFilterCategory("CSS")}>
+          CSS
         </div>
       </div>
       <div className='row'>
