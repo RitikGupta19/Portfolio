@@ -8,14 +8,13 @@ import MyTask from "../assets/projects_images/MyTask.PNG";
 import ToggleTheme from "../assets/projects_images/ToggleTheme.PNG";
 import Backend from "../assets/projects_images/Backend.PNG";
 import Grid from "../assets/projects_images/Grid.gif";
-// TODO
-import WhatsAppClone from "../assets/projects_images/DeveloperIn.PNG";
-// DeveloperIN, WhatsAPP, TicTacToe live
+import WhatsAppClone from "../assets/projects_images/WhatsApp.gif";
+// DeveloperIN, TicTacToe live
 const projectData = [
   {
     name: "WhatsApp Clone",
     image: WhatsAppClone,
-    deployed_url: "#",
+    deployed_url: "https://whatsapp-mern-b7d58.web.app/",
     github_url:
       "https://github.com/RitikGupta19/MERN/tree/master/WhatsAppClone",
     category: ["ReactJS", "Firebase", "NodeJS", "ExpressJS", "MongoDB"],
