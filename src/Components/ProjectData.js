@@ -9,7 +9,7 @@ import ToggleTheme from "../assets/projects_images/ToggleTheme.PNG";
 import Backend from "../assets/projects_images/Backend.PNG";
 import Grid from "../assets/projects_images/Grid.gif";
 import WhatsAppClone from "../assets/projects_images/WhatsApp.gif";
-// DeveloperIN, TicTacToe live
+
 const projectData = [
   {
     name: "WhatsApp Clone",
@@ -29,7 +29,7 @@ const projectData = [
   {
     name: "DeveloperIn",
     image: DeveloperIn,
-    deployed_url: "#",
+    deployed_url: "!#",
     github_url: "https://github.com/RitikGupta19/MERN/tree/master/DeveloperIn",
     category: ["ReactJS", "Redux", "NodeJS", "ExpressJS", "MongoDB"],
   },
@@ -58,7 +58,7 @@ const projectData = [
   {
     name: "ADV Tic Tac Toe",
     image: TicTacToe,
-    deployed_url: "#",
+    deployed_url: "https://tictactoe123-8ecd5.web.app",
     github_url: "https://github.com/RitikGupta19/MERN/tree/master/tictactoe",
     category: ["ReactJS"],
   },
